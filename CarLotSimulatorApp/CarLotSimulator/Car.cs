@@ -24,12 +24,12 @@ public class Car
 
     public void MakeHonkNoise(string honkNoise)
     {
-        Console.WriteLine($"{Make} {Model} has a honk noise that sounds like {HonkNoise}");
+        Console.WriteLine($"{Make} {Model} has a honk noise that sounds like {honkNoise}");
     }
 
     public Car()
     {
-        
+        CarLot.numberOfCars++;
     }
 
     public Car(string make, string model, int year, bool isDriveable)

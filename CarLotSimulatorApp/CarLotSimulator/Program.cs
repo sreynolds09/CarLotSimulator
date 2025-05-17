@@ -29,14 +29,13 @@ namespace CarLotSimulator
            
            carLotOne.ParkingLot.Add(carOne);
 
-           var carTwo = new Car()
-           {
-               Make = "Toyota",
-               Model = "Camery",
-               Year = 2020,
-               isDriveable = true,
+           var carTwo = new Car();
 
-           };
+            carTwo.Make = "Toyota";
+            carTwo.Model = "Camery";
+            carTwo.Year = 2020;
+            carTwo.isDriveable = true;
+                   
            
            carTwo.MakeEngineNoise(" " );
            carTwo.MakeHonkNoise("BEEP");
@@ -57,8 +56,7 @@ namespace CarLotSimulator
            //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
            //At the end iterate through the list printing each of car's Year, Make, and Model to the console
            
-           
-           
+           Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
            carLotOne.CheckCars();
         }
         
