@@ -38,6 +38,7 @@ public class Car
         Model = model;
         Year = year;
         isDriveable = isDriveable;
+        CarLot.numberOfCars++;
     }
 }
 
